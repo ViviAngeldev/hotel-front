@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="../style.css">
+    <!--crear otro archivo de estilos o usar este de ejemplo-->
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+   <!--No editar-->
+    <header>
+        <div class="logo_menu">
+        <h1 class="logo">Hotel Onceavo</h1>
+        <nav>
+            
+            <ul>
+                <li><a href="../index.html" >El Hotel</a></li>
+                <li><a href="../Habitaciones/habitaciones.html">Habitaciones</a></li>
+                <li><a href="../Ubicacion/ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+                <li><a href="#">Reservar</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+
+    </header>
+    <h2 class="titulo_pagina">Contacto</h2>
+    <main>
+    <div class="contenedor">
+    <div class="contacto">
+        <img class="img-contacto" src="Images/contact.jpg" alt="">
+    </div>
+    
+    
+        <!--Poner el titulo de la página que estás realizando-->
+        
+        
+            <form id="consultaForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+    
+                <div class="contenedor-genero">
+                <label for="genero">Género:</label>
+                <input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+                <label for="genero_masculino">M</label>
+                <input type="radio" id="genero_femenino" name="genero" value="femenino" required>
+                <label for="genero_femenino">F</label>
+                </div>
+
+                <label for="consulta">Tipo de Consulta:</label>
+                <select id="consulta" name="consulta" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="informacion_general">Información General</option>
+                    <option value="disponibilidad_habitaciones">Disponibilidad de Habitaciones</option>
+                    <option value="servicios_hotel">Servicios del Hotel</option>
+                    <option value="otros">Otros</option>
+                </select>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+            
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Redes sociales</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="contacto.js"></script>
+</body>
+</html>

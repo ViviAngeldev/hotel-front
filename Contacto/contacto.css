@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #f2f2f2;
+    --primary-color: #FAE8DA;
+    --secondary-color: #385170;
+    --third-color: #142d4c;
+    --error-color: #ff4d4d;
+}
+
+.contacto{
+ width: 100%;
+ margin: 0 auto;
+ border-radius: 8px;
+}
+
+.img-contacto{
+    border-radius: 5px;
+}
+
+
+.contenedor {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    background-color: var(--bg-color);
+    margin: 30px auto;
+    padding-bottom: 30px;
+}
+
+form {
+    padding-top: 30px;
+    border-radius: 5px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"],
+input[type="date"],
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input.error,
+select.error,
+textarea.error {
+    border: solid 2px var(--error-color);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flex-container label,
+.flex-container input {
+    width: 32%;
+}
+
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--third-color);
+}
+
+
+.contenedor-genero{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: left;
+}
+
+.contenedor-genero label{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor {
+        width: 100%;
+    }
+}
